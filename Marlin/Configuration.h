@@ -489,9 +489,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  #define DEFAULT_Kp 36.21
-  #define DEFAULT_Ki 4.80
-  #define DEFAULT_Kd 68.21
+#define DEFAULT_Kp 26.00
+#define DEFAULT_Ki 2.48
+#define DEFAULT_Kd 68.26
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -556,9 +556,10 @@
   //#define DEFAULT_bedKd 1675.16
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-#define DEFAULT_Kp 26.00
-#define DEFAULT_Ki 2.48
-#define DEFAULT_Kd 68.26
+#define DEFAULT_bedKp 364.62
+#define DEFAULT_bedKi 36.98
+#define DEFAULT_bedKd 2396.76
+
 #endif // PIDTEMPBED
 
 #if EITHER(PIDTEMP, PIDTEMPBED)
