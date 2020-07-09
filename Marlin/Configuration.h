@@ -489,9 +489,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  //#define DEFAULT_Kp 36.21
-  //#define DEFAULT_Ki 4.80
-  //#define DEFAULT_Kd 68.21
+  #define DEFAULT_Kp 24.37
+  #define DEFAULT_Ki 2.24
+  #define DEFAULT_Kd 66.44
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -556,9 +556,9 @@
   //#define DEFAULT_bedKd 1675.16
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-  #define DEFAULT_bedKp 87.69
-  #define DEFAULT_bedKi 16.83							 
-  #define DEFAULT_bedKd 304.6							 
+  #define DEFAULT_bedKp 18.87
+  #define DEFAULT_bedKi 2.98
+  #define DEFAULT_bedKd 79.67						 
 #endif // PIDTEMPBED
 
 #if EITHER(PIDTEMP, PIDTEMPBED)
@@ -994,7 +994,7 @@
 #define PROBING_MARGIN 15
 
 // X and Y axis travel speed (mm/m) between probes
-#define XY_PROBE_SPEED 5000
+#define XY_PROBE_SPEED 6000
 
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
@@ -1393,7 +1393,7 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (35*60)
+#define HOMING_FEEDRATE_XY (45*60)
 #define HOMING_FEEDRATE_Z  (4*60)
 
 // Validate that endstops are triggered on homing moves
@@ -2200,7 +2200,7 @@
 // Use software PWM to drive the fan, as for the heaters. This uses a very low frequency
 // which is not as annoying as with the hardware PWM. On the other hand, if this frequency
 // is too low, you should also increment SOFT_PWM_SCALE.
-//#define FAN_SOFT_PWM
+#define FAN_SOFT_PWM
 
 // Incrementing this by 1 will double the software PWM frequency,
 // affecting heaters, and the fan if FAN_SOFT_PWM is enabled.
